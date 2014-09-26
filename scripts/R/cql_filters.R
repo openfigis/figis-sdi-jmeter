@@ -33,8 +33,8 @@ count <- as.integer(args[5])
 
 cat("=> Reading WFS data...\n")
 wfs.request <- paste(host, "/", path,
-					"?service=WFS&version=1.0.0&request=GetFeature",
-					"&typeName=",typeName, sep = "")
+		"?service=WFS&version=1.0.0&request=GetFeature",
+		"&typeName=",typeName, sep = "")
 wfs.sp <- readWFS(wfs.request)
 
 cat("=> Generating random cql filters...\n")
