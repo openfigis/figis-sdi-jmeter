@@ -51,6 +51,6 @@ colnames(output) <- "cql_filter"
 
 cat("=> Writing output CSV file...\n")
 write.table(output, file = "cql_filters.csv", sep = ";",
-			row.names = FALSE, quote = FALSE)
+			row.names = FALSE, col.names = FALSE, quote = FALSE)
 
 cat("=> DONE!")
