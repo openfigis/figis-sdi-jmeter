@@ -19,6 +19,10 @@
 # @param propertyName (property name of interest for generating filters)
 # @param count (number of randoms)
 #
+# Usage:
+#
+# Rscript cql_filters.R "http://www.fao.org" "figis/geoserverprod/ows" "vme:closures" "VME_AREA_TIME" 100
+# 
 
 cat("=> Loading dependencies...\n")
 require(RFigisGeo)
